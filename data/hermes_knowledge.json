@@ -1,0 +1,189 @@
+[
+  {
+    "id": "HERMES001",
+    "category": "deployment",
+    "system": [
+      "Hermes Agent"
+    ],
+    "title": "3 准备工作",
+    "question": "部署 Hermes Agent 需要什么系统、硬件和运行环境？",
+    "answer": "以下摘自手册正文，未验证命令与版本兼容性；截图中的补充步骤未导入，请结合原手册核对。\n操作系统\nWindows10 (1903及以上版本)或Windows11；\n在Windows系统中开启WSL2和虚拟化支持（BIOS开启 VT-x / AMD-V）\n硬件建议\nCPU：4核+、内存：8G+、硬盘：50G\n基础运行环境\nWSL2+Ubuntu、Python、Node.js\nAPI KEY(Qwen3.6-27B)\nbase_url:<内网模型地址，请向IT团队获取>\nprovider: openai\nmodel: Qwen3.6-27B\nApi key: <按授权配置填写>\n说明：API KEY仅限IT运营团队内部使用，切勿外传。",
+    "source": "打造个人AI助理！Hermes Agent+Qwen3.6部署教程.docx｜v1.0｜3 准备工作",
+    "updated_at": "2026-05-09",
+    "tags": [
+      "Windows",
+      "硬件",
+      "内存",
+      "环境",
+      "Qwen3.6"
+    ],
+    "is_demo": false
+  },
+  {
+    "id": "HERMES002",
+    "category": "deployment",
+    "system": [
+      "Hermes Agent"
+    ],
+    "title": "4.1 WSL2安装",
+    "question": "如何安装和启用 WSL2？",
+    "answer": "以下摘自手册正文，未验证命令与版本兼容性；截图中的补充步骤未导入，请结合原手册核对。\n控制面板---启用或关闭Windows功能----勾选：Hyper-V，Windows虚拟机监控程序平台，适用于Linux的Windows子系统。\n以管理员身份打开 PowerShell （开始菜单 > PowerShell > 右键单击 > 以管理员身份运行），然后输入以下命令：\nwsl --set-default-version 2\n注：Windows 11 默认已安装 WSL2，不需要执行该命令。\nWindows 10 用户 需要执行此命令，否则默认使用 WSL1。\n重启电脑，WSL2安装完成。",
+    "source": "打造个人AI助理！Hermes Agent+Qwen3.6部署教程.docx｜v1.0｜4.1 WSL2安装",
+    "updated_at": "2026-05-09",
+    "tags": [
+      "WSL2",
+      "虚拟化",
+      "安装"
+    ],
+    "is_demo": false
+  },
+  {
+    "id": "HERMES003",
+    "category": "deployment",
+    "system": [
+      "Hermes Agent"
+    ],
+    "title": "4.2 WSL2 安装 Ubuntu",
+    "question": "如何在 WSL2 中安装 Ubuntu？",
+    "answer": "以下摘自手册正文，未验证命令与版本兼容性；截图中的补充步骤未导入，请结合原手册核对。\n原文命令中的长横线已规范为两个 ASCII 连字符。\n查看可用的WSL发行版：wsl --list --online\n安装 Ubuntu-24.04\nwsl --install -d Ubuntu-24.04\n安装完毕后会要求你创建一个新用户，按照提示输入用户名和密码即可，然后按 Ctrl + D 退出即可。\n进入Ubuntu系统，点+号，选择Ubuntu",
+    "source": "打造个人AI助理！Hermes Agent+Qwen3.6部署教程.docx｜v1.0｜4.2 WSL2 安装 Ubuntu",
+    "updated_at": "2026-05-09",
+    "tags": [
+      "WSL2",
+      "Ubuntu",
+      "安装"
+    ],
+    "is_demo": false
+  },
+  {
+    "id": "HERMES004",
+    "category": "deployment",
+    "system": [
+      "Hermes Agent"
+    ],
+    "title": "4.3 安装Hermes Agent",
+    "question": "如何安装 Hermes Agent？",
+    "answer": "以下摘自手册正文，未验证命令与版本兼容性；截图中的补充步骤未导入，请结合原手册核对。\n在当前终端安装 Hermes Agent：\ncurl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash\n录入创建用户时的密码：",
+    "source": "打造个人AI助理！Hermes Agent+Qwen3.6部署教程.docx｜v1.0｜4.3 安装Hermes Agent",
+    "updated_at": "2026-05-09",
+    "tags": [
+      "Hermes",
+      "安装",
+      "终端"
+    ],
+    "is_demo": false
+  },
+  {
+    "id": "HERMES005",
+    "category": "deployment",
+    "system": [
+      "Hermes Agent"
+    ],
+    "title": "4.4 配置Hermes Agent",
+    "question": "如何配置 Hermes Agent 模型接口？",
+    "answer": "以下摘自手册正文，未验证命令与版本兼容性；截图中的补充步骤未导入，请结合原手册核对。\n选择快速模式：\n录入：<内网模型地址，请向IT团队获取>\nAPI key: <按授权配置填写>\n录入Y后，下一步、下一步回车，默认就好。\n跳过消息软件的连接，后续可以再配置。",
+    "source": "打造个人AI助理！Hermes Agent+Qwen3.6部署教程.docx｜v1.0｜4.4 配置Hermes Agent",
+    "updated_at": "2026-05-09",
+    "tags": [
+      "Hermes",
+      "模型",
+      "配置",
+      "API"
+    ],
+    "is_demo": false
+  },
+  {
+    "id": "HERMES006",
+    "category": "deployment",
+    "system": [
+      "Hermes Agent"
+    ],
+    "title": "4.5 启动Hermes Agent",
+    "question": "如何启动 Hermes Agent？",
+    "answer": "以下摘自手册正文，未验证命令与版本兼容性；截图中的补充步骤未导入，请结合原手册核对。\ncd ~/.hermes/hermes-agent\nsource venv/bin/activate\nhermes gateway run",
+    "source": "打造个人AI助理！Hermes Agent+Qwen3.6部署教程.docx｜v1.0｜4.5 启动Hermes Agent",
+    "updated_at": "2026-05-09",
+    "tags": [
+      "Hermes",
+      "启动",
+      "gateway"
+    ],
+    "is_demo": false
+  },
+  {
+    "id": "HERMES007",
+    "category": "deployment",
+    "system": [
+      "Hermes Agent"
+    ],
+    "title": "4.6 启用Hermes WebUI",
+    "question": "如何启用 Hermes WebUI 网页界面？",
+    "answer": "以下摘自手册正文，未验证命令与版本兼容性；截图中的补充步骤未导入，请结合原手册核对。\ncd ~/.hermes/hermes-agent\ngit clone https://github.com/nesquena/hermes-webui.git hermes-webui\ncd hermes-webui\npython3 bootstrap.py\n访问地址：http://127.0.0.1:8787/",
+    "source": "打造个人AI助理！Hermes Agent+Qwen3.6部署教程.docx｜v1.0｜4.6 启用Hermes WebUI",
+    "updated_at": "2026-05-09",
+    "tags": [
+      "Hermes",
+      "WebUI",
+      "网页",
+      "启动"
+    ],
+    "is_demo": false
+  },
+  {
+    "id": "HERMES008",
+    "category": "deployment",
+    "system": [
+      "Hermes Agent"
+    ],
+    "title": "4.7 Hermes Agent 钉钉接入",
+    "question": "Hermes Agent 如何接入钉钉机器人？",
+    "answer": "以下摘自手册正文，未验证命令与版本兼容性；截图中的补充步骤未导入，请结合原手册核对。\n1.在钉钉开放平台创建应用\n访问 钉钉开放平台。\n进入 “开发者后台” -> “应用开发” ->  “钉钉应用” -> “小程序”/“H5微应用” (根据需求选择)，点击 “创建应用”。\n填写应用信息并创建。\n2.获取凭证\n在应用详情页，找到 “机器人” 或 “事件订阅” 相关设置。\n启用机器人，并获取 AppKey 和 AppSecret。\n3.配置 Hermes Gateway\n运行配置命令：hermes gateway setup\n注意：粘贴后不显示，回车即可。\n4.在钉钉中添加机器人",
+    "source": "打造个人AI助理！Hermes Agent+Qwen3.6部署教程.docx｜v1.0｜4.7 Hermes Agent 钉钉接入",
+    "updated_at": "2026-05-09",
+    "tags": [
+      "Hermes",
+      "钉钉",
+      "机器人",
+      "Gateway"
+    ],
+    "is_demo": false
+  },
+  {
+    "id": "HERMES009",
+    "category": "deployment",
+    "system": [
+      "Hermes Agent"
+    ],
+    "title": "5 核心目录结构",
+    "question": "Hermes Agent 配置文件、记忆和日志放在哪里？",
+    "answer": "以下摘自手册正文，未验证命令与版本兼容性；截图中的补充步骤未导入，请结合原手册核对。\n安装完成后，Hermes-Agent的数据存储在 ~/.hermes/ 目录：\n~/.hermes/\n├── config.yaml           # 主配置文件\n├── .env                  # API 密钥和敏感信息\n├── auth.json             # OAuth 凭证（Nous Portal 等）\n├── SOUL.md               # 可选：全局人格设定\n├── active_profile        # 当前激活的配置文件\n├── memories/             # 持久化记忆\n│   ├── MEMORY.md         # Agent 的记忆存储\n│   └── USER.md           # 用户偏好记录\n├── skills/               # Agent 创建的技能\n├── cron/                 # 定时任务\n├── sessions/             # Gateway 会话\n├── state.db              # 状态数据库\n└── logs/                 # 日志文件\n    ├── errors.log        # 错误日志\n    └── gateway.log       # Gateway 日志（密钥自动脱敏）",
+    "source": "打造个人AI助理！Hermes Agent+Qwen3.6部署教程.docx｜v1.0｜5 核心目录结构",
+    "updated_at": "2026-05-09",
+    "tags": [
+      "Hermes",
+      "目录",
+      "配置文件",
+      "日志",
+      "记忆"
+    ],
+    "is_demo": false
+  },
+  {
+    "id": "HERMES010",
+    "category": "deployment",
+    "system": [
+      "Hermes Agent"
+    ],
+    "title": "6 SOUL.md 人格设定",
+    "question": "如何通过 SOUL.md 设置 Hermes Agent 人格？",
+    "answer": "以下摘自手册正文，未验证命令与版本兼容性；截图中的补充步骤未导入，请结合原手册核对。\n通过 ~/.hermes/SOUL.md 定义 Agent 的全局人格：\n# ~/.hermes/SOUL.md\n## 身份\n你是一位经验丰富的IT运维工程师和AI助手，名为Hermes。\n## 性格特点\n- 专业但不失亲和\n- 注重运维质量和最佳实践\n- 善于用类比解释复杂概念\n- 主动提出改进建议\n## 沟通风格\n- 回答简洁明了，避免冗余\n- 重要信息使用列表或表格呈现\n- 技术术语配合通俗解释\n## 工作原则\n- 安全第一：不执行危险操作\n- 验证优先：关键操作需确认\n- 效率导向：优先选择高效方案\n- 学习导向：鼓励用户理解原理\n## 特殊指令\n- 使用中文回复\n- 代码块指定语言类型\n- 复杂任务分解为步骤",
+    "source": "打造个人AI助理！Hermes Agent+Qwen3.6部署教程.docx｜v1.0｜6 SOUL.md 人格设定",
+    "updated_at": "2026-05-09",
+    "tags": [
+      "Hermes",
+      "SOUL.md",
+      "人格"
+    ],
+    "is_demo": false
+  }
+]

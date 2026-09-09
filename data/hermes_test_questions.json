@@ -1,0 +1,62 @@
+[
+  {
+    "query": "部署 Hermes Agent 需要什么系统、硬件和运行环境？",
+    "expected_doc_ids": [
+      "HERMES001"
+    ]
+  },
+  {
+    "query": "如何安装和启用 WSL2？",
+    "expected_doc_ids": [
+      "HERMES002"
+    ]
+  },
+  {
+    "query": "如何在 WSL2 中安装 Ubuntu？",
+    "expected_doc_ids": [
+      "HERMES003"
+    ]
+  },
+  {
+    "query": "如何安装 Hermes Agent？",
+    "expected_doc_ids": [
+      "HERMES004"
+    ]
+  },
+  {
+    "query": "如何配置 Hermes Agent 模型接口？",
+    "expected_doc_ids": [
+      "HERMES005"
+    ]
+  },
+  {
+    "query": "如何启动 Hermes Agent？",
+    "expected_doc_ids": [
+      "HERMES006"
+    ]
+  },
+  {
+    "query": "如何启用 Hermes WebUI 网页界面？",
+    "expected_doc_ids": [
+      "HERMES007"
+    ]
+  },
+  {
+    "query": "Hermes Agent 如何接入钉钉机器人？",
+    "expected_doc_ids": [
+      "HERMES008"
+    ]
+  },
+  {
+    "query": "Hermes Agent 配置文件、记忆和日志放在哪里？",
+    "expected_doc_ids": [
+      "HERMES009"
+    ]
+  },
+  {
+    "query": "如何通过 SOUL.md 设置 Hermes Agent 人格？",
+    "expected_doc_ids": [
+      "HERMES010"
+    ]
+  }
+]

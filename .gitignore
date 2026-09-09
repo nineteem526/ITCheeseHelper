@@ -1,0 +1,10 @@
+.venv/
+.env
+__pycache__/
+.pytest_cache/
+artifacts/
+reports/
+
+# Local credentials and imported business documents
+env.txt
+data/uploads/

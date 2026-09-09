@@ -1,0 +1,6 @@
+knowledge_path: data/hermes_knowledge.json
+index_dir: artifacts/hermes_bm25
+test_questions_path: data/hermes_test_questions.json
+report_dir: reports/hermes
+top_k: 10
+max_document_chars: 6000

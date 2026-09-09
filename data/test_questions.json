@@ -1,0 +1,18 @@
+[
+  {"query":"忘记鲸加密码怎么办","expected_doc_ids":["KB001"],"expected_intent":"password_forgotten"},
+  {"query":"ZMP 密码忘记了","expected_doc_ids":["KB001"]},
+  {"query":"新员工鲸加提示修改用户密码失败","expected_doc_ids":["KB002"],"expected_intent":"password_reset_failed"},
+  {"query":"已登录鲸加如何修改密码","expected_doc_ids":["KB003"]},
+  {"query":"鲸加提示密码过期","expected_doc_ids":["KB004"]},
+  {"query":"鲸加登不上去了","expected_doc_ids":["KB005"]},
+  {"query":"邮箱密码忘记了怎么找回","expected_doc_ids":["KB006"]},
+  {"query":"Outlook E-DEMO-401","expected_doc_ids":["KB007"]},
+  {"query":"Teams 密码忘记了如何重置","expected_doc_ids":["KB008"]},
+  {"query":"Teams 提示账号锁定","expected_doc_ids":["KB009"]},
+  {"query":"VPN 密码忘记了","expected_doc_ids":["KB010"]},
+  {"query":"VPN 密码过期无法登录","expected_doc_ids":["KB011"]},
+  {"query":"新员工查看鲸加和邮箱账号开通状态","expected_doc_ids":["KB012"]},
+  {"query":"鲸加登录异常或密码过期","expected_doc_ids":["KB004","KB005"]},
+  {"query":"密码","expected_doc_ids":[],"should_clarify":true},
+  {"query":"公司 WiFi 密码是多少","expected_doc_ids":[],"should_no_answer":true}
+]
